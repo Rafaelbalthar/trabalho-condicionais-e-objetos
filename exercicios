@@ -145,3 +145,24 @@ const aluno = {
     }
 
 */
+
+//EX5 Código
+
+let obj {nome: "nome", preco: 10, desconto: 5, fretegratis: true}
+
+if(obj.fretegratis){
+    if(obj.desconto >0){
+        console.log("com frete gratis e desconto");
+    }
+    else{
+        console.log("com frete gratis mas sem desconto");
+    }
+}else{
+    if(obj.desconto >0 ){
+        console.log("sem frete gratis e com desconto")
+    }
+    else{
+        console.log("sem desconto e sem frete");
+    }
+}
+
