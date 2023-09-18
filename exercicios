@@ -1,0 +1,147 @@
+//EX1 Interpretaçao 
+/*
+javascriptCopy code
+const pessoa = {
+nome: "Alice",
+idade: 25,
+temCarteiraDeMotorista: true
+}
+if (pessoa.idade >= 18 && pessoa.temCarteiraDeMotorista) {
+console.log(`${pessoa.nome} pode dirigir!`)
+} else {
+console.log(`${pessoa.nome} não pode dirigir.`)
+}
+
+a) O que o código acima faz? Explique em palavras simples.
+//O código verifica a idade se é maior que 18 anos e verifica a variavel temCarteiraDeMotorista para dar como resposta se pode ou nào dirigir.
+
+
+b) Quando a mensagem "Alice pode dirigir!" será impressa no console? E
+quando a mensagem "Alice não pode dirigir." será impressa?
+Séra impressa "Alice pode dirigir!" quando na constante idade um número maior que 18 e na variavel temCarteiraDeMotorista estiver o boleano true, para aparecer "Alice não pode dirigir." a constante idade deverá ter um numero menor e o boleano ser false.
+
+*/
+
+//EX2 Interpretaçao 
+/*
+const animal = {
+    nome: "Leão",
+    carnivoro: true
+    }
+    if (animal.carnivoro) {
+    console.log(`${animal.nome} é um animal carnívoro.`)
+    } else {
+    console.log(`${animal.nome} não é um animal carnívoro.`)
+    }
+
+a) Qual é o objetivo deste código?
+O objetivo é ler o boleano na variaevel carnivoro, imprimir o nome e se é carnoivoro
+
+
+b) Qual mensagem será impressa no console?
+Será impresso que o Leào é carnivoro por conta do boleano true
+
+*/
+//EX3 Interpretaçao 
+/*
+const numero = 10;
+if (numero > 5) {
+console.log("O número é maior do que 5.");
+} else {
+console.log("O número é menor ou igual a 5.");
+}
+if (numero % 2 === 0) {
+console.log("O número é par.");
+} else {
+console.log("O número é ímpar.");
+}
+
+
+a) O que este código faz?
+Faz a leitura da variavel numero e verifica em duas condicionais, se é maior, menor ou igual a 5 para imprimir este resultado e na segunda condicional se o numero é par ou impar.
+
+b) Quais mensagens serão impressas no console?
+Será impresso que o número 10 é maior que 5 e que o número é par
+*/
+
+//EX1 Código
+/*
+Crie um programa que pergunte ao usuário sua idade e armazene essa informação em uma variável chamada idade . Em seguida, utilize uma
+estrutura condicional para verificar se o usuário é maior ou igual a 18 anos. Se for, imprima a mensagem "Você é maior de idade", caso
+contrário, imprima "Você é menor de idade".
+
+
+let idade = Number(prompt(`Quantos anos você tem?`))
+
+if(idade >= 18) {
+    alert(`Você é maior de idade.`)
+}
+else{
+    alert(`Você é menor de idade.`)
+}
+*/
+//EX2 Código
+/*
+Crie um programa que pergunte ao usuário qual turno do dia ele estuda:"M" para matutino, "T" para tarde ou "N" para noturno. Armazene a
+resposta em uma variável chamada turno . Utilize uma estruturacondicional para imprimir a mensagem "Bom Dia!" se o usuário estuda
+de manhã, "Boa Tarde!" se estuda à tarde e "Boa Noite!" se estuda à noite.
+
+
+let turno = prompt(`Insira o turno que você estuda, seguindo esse padrão: "M" (matutino), "V" (Vespertino) ou "N" (Noturno)`).toUpperCase()
+
+if(turno === `M`){
+    console.log(`Bom dia!`)
+}
+else if(turno === `V`){
+    console.log(`Boa tarde!`)
+}
+else if(turno === "N"){
+    console.log(`Boa noite!`)
+}
+else{
+    console.log(`Digite novamente seguindo o padrão indicado.`)
+}
+*/
+
+
+//EX3 Código
+/*
+Modifique o exercício anterior para usar uma estrutura de switch case em vez de uma estrutura condicional if/else.
+let turno = prompt(`Insira o turno que você estuda, seguindo esse padrão: "M" (matutino), "V" (Vespertino) ou "N" (Noturno)`).toUpperCase()
+
+switch (turno) {
+    case `M`:
+        console.log(`Bom dia!`)
+        break;
+    case "V":
+        console.log(`Boa tarde!`)
+        break;
+    case "N":
+        console.log(`Boa noite!`)    
+    default:
+        console.log(`Digite novamente seguindo o padrão indicado.`)
+        break;
+}
+*/
+
+//EX4 Código
+/*
+Crie um objeto chamado aluno com as seguintes propriedades: nome ,idade , tipoDeCurso e temBolsa . Em seguida, escreva um programa que
+verifica se o aluno pode se candidatar a uma bolsa de estudos. Para ser elegível, o aluno deve ter menos de 30 anos, estar matriculado em um
+curso de graduação e não ter bolsa. Se o aluno atender a todos esses critérios, imprima "Você pode se candidatar a uma bolsa de estudos!".
+Caso contrário, imprima "Desculpe, você não atende aos requisitos para a bolsa."
+
+const aluno = {
+    nome: "Alice",
+    idade: 25,
+    temGraduacao: true,
+    temBolsa: true,
+    }
+    if (aluno.idade <= 30 && aluno.temGraduacao && aluno.temBolsa) {
+    console.log(`${aluno.nome}, você pode se candidatar a uma bolsa de estudos!`)
+    } else {
+    console.log(`Desculpe ${aluno.nome}, você não atende aos requisitos para
+    a bolsa.`)
+    }
+
+*/
